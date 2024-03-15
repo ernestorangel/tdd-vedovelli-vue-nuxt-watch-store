@@ -113,7 +113,7 @@
         </div>
       </div>
     </header>
-    <cart-modal />
+    <!-- <cart-modal /> -->
     <nuxt />
     <footer class="bg-gray-200">
       <div
@@ -129,8 +129,8 @@
 </template>
 
 <script>
-import CartModal from '@/components/CartModal';
-export default {
-  components: { CartModal },
-};
+// import CartModal from '@/components/CartModal';
+// export default {
+//   components: { CartModal },
+// };
 </script>
