@@ -129,8 +129,8 @@
 </template>
 
 <script>
-import CartModal from '@/components/CartModal'
+import CartModal from '@/components/CartModal';
 export default {
   components: { CartModal },
-}
+};
 </script>
