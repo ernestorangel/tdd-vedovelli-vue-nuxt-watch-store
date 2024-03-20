@@ -39,7 +39,7 @@ exports[`ProductCard (Unit) should match snapshot 1`] = `
     <span
       class="text-gray-500 mt-2"
     >
-      506.00
+      240.00
     </span>
   </div>
 </div>
