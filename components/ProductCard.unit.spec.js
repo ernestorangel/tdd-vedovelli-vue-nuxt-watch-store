@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils';
 import ProductCard from '@/components/ProductCard.vue';
-import { makeServer } from '~/miragejs/server';
+import { makeServer } from '@/miragejs/server';
 
 let server;
 
