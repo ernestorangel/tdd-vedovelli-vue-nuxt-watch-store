@@ -31,7 +31,10 @@
             Brand
           </div>
           <div class="flex items-center justify-end w-full">
-            <button class="text-gray-600 focus:outline-none mx-4 sm:mx-0">
+            <button
+              class="text-gray-600 focus:outline-none mx-4 sm:mx-0"
+              @click="toggleCart"
+            >
               <svg
                 class="h-5 w-5"
                 fill="none"
@@ -94,7 +97,7 @@
         </nav>
       </div>
     </header>
-    <!-- <cart-modal /> -->
+    <cart-modal :is-open="isCartOpen" @close="toggleCart" />
     <nuxt />
     <footer class="bg-gray-200">
       <div
@@ -110,8 +113,18 @@
 </template>
 
 <script>
-// import CartModal from '@/components/CartModal';
-// export default {
-//   components: { CartModal },
-// };
+import CartModal from '@/components/CartModal';
+export default {
+  components: { CartModal },
+  data() {
+    return {
+      isCartOpen: false,
+    };
+  },
+  methods: {
+    toggleCart() {
+      this.isCartOpen = !this.isCartOpen;
+    },
+  },
+};
 </script>
